@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdityaRanjanSingh/adityaranjansingh.github.io.git"
+  },
+  "author": "aditya ranjan singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdityaRanjanSingh/adityaranjansingh.github.io/issues"
+  },
+  "homepage": "https://github.com/AdityaRanjanSingh/adityaranjansingh.github.io#readme",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-uglify": "^3.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-express": "^1.4.1",
+    "grunt-parallel": "^0.5.1"
+  }
+}

@@ -1,0 +1,137 @@
+/* Empty. Add your own CSS if you like */
+
+html{
+    height:100%;
+}
+body{
+    margin:0;
+    height:100%;
+}
+.wrapper{    
+    display:none;
+    height:100%;
+    width:100%;
+}
+
+.justifyContentRight{
+	justify-content: flex-end;
+}
+
+.fullPageView{
+	display: flex;
+	align-items: center;
+  margin-top: 150px;
+}
+
+.headerToolbarButtons{
+	position: relative;
+	font-weight: 700;
+    font-size: 1.5em;
+    color: white;
+}
+.strikeThrough{
+	position: absolute;
+    width: 0px;
+    height: 2px;
+    background: orange;
+    top: 56%;
+    transition: width 1s;
+}
+
+.headerToolbarButtons .nav-link {
+	color: white !important;
+}
+.headerToolbarButtons:hover .strikeThrough{	
+	width: 100%;
+}
+.active .strikeThrough{	
+	width: 100%;
+}
+.aboutMeText label{
+    font-size: 5em;
+    font-weight: 500;
+}
+.selfIntoText{
+	font-size: 2em;	
+}
+.ProfilePicAndIntro{
+	position: relative;
+
+}
+.profileIntroPic{
+	display: flex;
+	justify-content: center;
+}
+.profileIntroPic img{
+	width: 20rem;
+	height: 20rem;
+	border-radius: 50%; 
+}
+.backgroundBlack{
+	background-color: black;
+	height:  0px;
+}
+
+
+.PieChartSlice{
+	animation: fillSlice 3s ease  ;
+}
+@keyframes fillSlice {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*Animation*/
+.animated {
+  animation-duration: 1s;
+  animation-delay: 1s
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+} 
+
+
+@keyframes slideFromLeft { 
+  0%{
+  		margin-left: -2000px;
+  	}  
+  100%{
+  	margin-left: 0px;
+  }
+} 
+@keyframes slideFromRight{
+	0%{
+		margin-right: -2000px;
+	}
+	100%{
+		margin-right: 0px;
+	}
+}
+
+.slideFromLeft {  
+  animation-name: slideFromLeft;
+}
+.slideFromRight{
+	animation-name: slideFromRight;
+}
+.path {
+  stroke-dasharray: 350;
+  stroke-dashoffset: 350;
+  animation: dash 3s ease alternate infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 350;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
+
+
